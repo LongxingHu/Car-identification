@@ -25,7 +25,7 @@ top1_acc:
 ![image](https://github.com/Fanzweig/Car-identification/blob/main/images/top1.png)
 
 
-top1_acc:
+top5_acc:
 ![image](https://github.com/Fanzweig/Car-identification/blob/main/images/top5.png)
 ### CarReco
 该文件夹代码实现了一个使用Django搭建的算法网页展示。
