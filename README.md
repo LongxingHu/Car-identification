@@ -21,6 +21,10 @@
 
 注意：本文提供训练好的模型，在RTX-2080显卡上训练100个epoch需要运行约50小时。模型链接：https://pan.baidu.com/s/1GF42Bt7rPbI8olXCZqc_3A?pwd=6666。需要将下载好的模型放在CarReco-->CarReco-->predict-->views.py上修改模型路径，这样网页可以正常预加载训练好的模型。另外model_test.py能够测试Top1和top5的识别准确率。
 
+top1_acc:
+![image](https://github.com/Fanzweig/Car-identification/blob/main/images/top1.png)
+top1_acc:
+![image](https://github.com/Fanzweig/Car-identification/blob/main/images/top5.png)
 ### CarReco
 该文件夹代码实现了一个使用Django搭建的算法网页展示。
 业务逻辑：用户在前端html页面上传一张图像，后台会接收该文件并保存在项目目录结构中predict--->static--->img--->show.jpg上，然后使用训练好的模型对其进行预测，网页左侧返回Top5的预测结果。知识图谱在在其中扮演什么角色？答：丰富返回信息。利用预测的Top1结果，在知识图谱中自动生成Cypher语句(默认是查询车系的综合信息：包括品牌、价格、引擎类型、用户评分等)，然后结果返回网页右侧。
@@ -32,7 +36,8 @@ python manage.py runserver
 ```
 
 网页展示如下：
-
+![image](https://github.com/Fanzweig/Car-identification/blob/main/images/web_show1.jpg)
+![image](https://github.com/Fanzweig/Car-identification/blob/main/images/web_show2.jpg)
 
 
 
