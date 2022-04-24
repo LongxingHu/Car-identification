@@ -29,7 +29,8 @@
 python manage.py runserver
 ```
 
-
-
-就可！
 网页展示如下：
+
+
+
+
