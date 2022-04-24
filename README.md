@@ -15,7 +15,7 @@
 图像数据集链接：https://pan.baidu.com/s/19GranwVhkFazVChGA0aPhA?pwd=6666 
 文本数据集链接：https://pan.baidu.com/s/1HmIZccWgZz69SbnuQDMhZQ?pwd=6666
 
-准备好数据集后，使用文本数据集构建汽车知识图谱以及搭建一个简单的汽车问答系统。在KgCars文件夹中运行Build_Graph.py文件创建知识图谱。你需要预先准备好neo4j环境并在该文件修改自己的neo4j平台账号和密码。之后直接运行chatbot_grapg.py便可！
+准备好数据集后，使用文本数据集构建汽车知识图谱以及搭建一个简单的汽车问答系统。在KgCars文件夹中运行Build_Graph.py文件创建知识图谱。你需要预先准备好neo4j环境并在该文件修改自己的neo4j平台账号和密码。之后直接运行chatbot_grapg.py便可！**注意只能识别经过训练的车系，也就是900个类别，具体信息在Multi_car-->img_info.csv中**
 
 ### Multi_Car
 该文件夹对应模型的训练，本次实验使用EfficientNetB8对汽车图像数据集进行迁移学习。经过100个epoch的训练。模型Top1识别准确率为94.33737%, Top5识别准确率为99.3033%，模型较为优秀。训练好的模型放在fine_tune文件夹下。读者可以尝试在其它数据集例如ImageNet上训练模型，不过这样的话你需要另外制作DataLoader惹！
