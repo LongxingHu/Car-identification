@@ -23,6 +23,8 @@
 
 top1_acc:
 ![image](https://github.com/Fanzweig/Car-identification/blob/main/images/top1.png)
+
+
 top1_acc:
 ![image](https://github.com/Fanzweig/Car-identification/blob/main/images/top5.png)
 ### CarReco
