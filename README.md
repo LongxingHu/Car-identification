@@ -25,7 +25,7 @@
 3. 仅在第一次训练模型之前运行，test.py可以根据img_info.csv将数据集分割为训练数据和测试数据。
 4. 运行EfficientNet.py便可开始训练模型，读者可以自己设置一些超参。
 
-注意：本文提供训练好的模型，在RTX-2080显卡上训练100个epoch需要运行约50小时。模型链接：https://pan.baidu.com/s/1GF42Bt7rPbI8olXCZqc_3A?pwd=6666。需要将下载好的模型放在CarReco-->CarReco-->predict-->views.py上修改模型路径，这样网页可以正常预加载训练好的模型。另外model_test.py能够测试Top1和top5的识别准确率。
+注意：本文提供训练好的模型，在RTX-2080显卡上训练100个epoch需要运行约50小时。模型链接：https://pan.baidu.com/s/1GF42Bt7rPbI8olXCZqc_3A?pwd=6666 需要将下载好的模型放在CarReco-->CarReco-->predict-->views.py上修改模型路径，这样网页可以正常预加载训练好的模型。另外model_test.py能够测试Top1和top5的识别准确率。
 
 top1_acc:
 ![image](https://github.com/Fanzweig/Car-identification/blob/main/images/top1.png)
